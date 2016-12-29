@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/inner_rv_width"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/show_border">
+
+    <RelativeLayout
+        android:id="@+id/rlShowImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/show_image_height">
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvShowDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:background="@color/details_separator"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/show_duration_text_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlShowImage"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvShowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/title"
+            android:textSize="@dimen/show_title_text_size" />
+
+        <TextView
+            android:id="@+id/tvShowSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvShowTitle"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/title"
+            android:textSize="@dimen/show_subtitle_text_size" />
+
+        <ImageView
+            android:id="@+id/ivLock"
+            android:layout_width="@dimen/lock_image_width"
+            android:layout_height="@dimen/lock_image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvShowSubTitle"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/locked_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

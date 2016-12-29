@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/subcategory_rv_row_height"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/tvSubCategoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="@dimen/sub_category_title_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/innerRV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSubCategoryTitle"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="horizontal" />
+
+</RelativeLayout>

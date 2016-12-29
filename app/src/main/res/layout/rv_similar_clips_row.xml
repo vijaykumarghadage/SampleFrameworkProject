@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/similar_clip_rv_row_height"
+    android:layout_marginTop="5dp"
+    android:background="@color/details_bg"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/ivClipImage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.4" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvClipTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/title"
+            android:textColor="@color/details_text_color"
+            android:textSize="@dimen/clip_title_size" />
+
+        <TextView
+            android:id="@+id/tvClipTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvClipTitle"
+            android:text="@string/sample_time"
+            android:textColor="@color/sc_time_color"
+            android:textSize="@dimen/clip_time_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_separator_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/details_separator" />
+    </RelativeLayout>
+</LinearLayout>

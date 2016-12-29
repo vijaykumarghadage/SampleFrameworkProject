@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#202021</color><!--#3F51B5-->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="details_bg">#202021</color><!--#4a4a4c-->
+    <color name="details_text_color">#afb1b5</color>
+    <color name="sc_time_color">#797a7c</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="details_separator">#4a4a4c</color>
+
+</resources>

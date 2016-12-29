@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.cybage.mobitvassignment.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/tilesViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tiles_view_pager_height"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:id="@+id/llDots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tilesViewPager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tilesViewPager">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
